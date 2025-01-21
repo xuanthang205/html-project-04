@@ -92,7 +92,7 @@
         <!-- Styles -->
         <link rel="stylesheet" href="./assets/css/main.css" />
     </head>
-    <body style="height: 5000px;">
+    <body style="height: 5000px">
         <header class="header fixed">
             <div class="container">
                 <div class="header-content">
@@ -112,7 +112,11 @@
                     <nav class="navbar">
                         <ul class="navbar__list">
                             <li class="navbar__item">
-                                <a href="#!" class="navbar__link navbar__link--active">Home</a>
+                                <a
+                                    href="#!"
+                                    class="navbar__link navbar__link--active"
+                                    >Home</a
+                                >
                             </li>
                             <li class="navbar__item">
                                 <a href="#!" class="navbar__link">Services</a>
@@ -126,12 +130,51 @@
                         </ul>
                     </nav>
                     <!-- Action -->
-                    <div class="action">
-                        <a href="#!" class="action__login">Log In</a>
-                        <a href="#!" class="btn action__signup">Sign Up</a>
+                    <div class="header-action">
+                        <a href="#!" class="header-action__login">Log In</a>
+                        <a href="#!" class="btn header-action__signup"
+                            >Sign Up</a
+                        >
                     </div>
                 </div>
             </div>
         </header>
+        <main>
+            <section class="hero">
+                <div class="container">
+                    <!-- Hero content -->
+                    <section class="hero__content">
+                        <h1 class="hero__heading">
+                            Exceptional dental care for all ages.
+                        </h1>
+                        <p class="hero__desc">
+                            Exceptional dental care for all ages. Your great
+                            smile begins with a great dentist.
+                        </p>
+                        <div class="hero__row">
+                            <a href="#!" class="btn">Book Online</a>
+                            <span class="hero__phone"
+                                >or call (123) 456-7890</span
+                            >
+                        </div>
+                    </section>
+                    <!-- Hero media -->
+                    <div class="hero__media">
+                        <figure class="hero__images">
+                            <img
+                                src="./assets/images/hero-image.webp"
+                                alt=""
+                                class="hero__img"
+                            />
+                            <img
+                                src="./assets/images/hero-img2.webp"
+                                alt=""
+                                class="hero__img"
+                            />
+                        </figure>
+                    </div>
+                </div>
+            </section>
+        </main>
     </body>
 </html>
