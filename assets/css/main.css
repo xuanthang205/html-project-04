@@ -112,6 +112,7 @@ a {
 
 .section-desc {
     margin-top: 18px;
+    width: 468px;
     color: #575f66;
     font-size: 1.8rem;
     font-weight: 300;
@@ -207,6 +208,7 @@ a {
     padding: 66px 0 110px;
 }
 
+.feature .container,
 .hero .container {
     display: flex;
     align-items: center;
@@ -286,7 +288,6 @@ a {
 }
 
 .service .section-desc {
-    width: 468px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -325,7 +326,7 @@ a {
 
 .service-item:hover .service-item__icon {
     color: #fff;
-    background-color: #2E80CE;
+    background-color: #2e80ce;
 }
 
 .service-item__icon {
@@ -359,5 +360,103 @@ a {
     font-size: 1.6rem;
     font-weight: 300;
     line-height: 1.75; /* 175% */
-    height: calc(1.75em * 2)
+    height: calc(1.75em * 2);
+}
+
+/* Work */
+.work {
+    padding: 100px 0;
+    background: #f6fbff;
+}
+
+.work__list {
+    margin-top: 86px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+}
+
+.work__item,
+.work__item-content {
+    border-radius: 4px;
+}
+
+.work__item {
+    padding: 16px;
+    background-color: #eaf6ff;
+    transition: 0.25s;
+}
+
+.work__item-content {
+    padding: 43px 42px 35px;
+    background-color: #fff;
+}
+
+.work__item:hover {
+    background-color: #2e80ce;
+    transform: translateY(-16px);
+}
+
+.work__heading {
+    margin-top: 18px;
+    color: var(--primary-color);
+    font-size: 2.6rem;
+    font-weight: 600;
+    line-height: 1.38; /* 138.462% */
+}
+
+.work__more,
+.work__desc {
+    margin-top: 28px;
+    color: #575f66;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.75; /* 175% */
+}
+
+.work__more {
+    color: #2e80ce;
+    margin-top: 10px;
+    padding: 8px 6px 8px 0;
+}
+
+/* Feature */
+.feature {
+    margin-top: 85px;
+    padding: 85px 0;
+}
+
+.feature__media {
+    width: 48.72%;
+}
+
+.feature__images {
+    position: relative;
+    padding-bottom: 121px;
+}
+
+.feature__img {
+    width: 512px;
+    height: 370px;
+    object-fit: cover;
+    vertical-align: bottom;
+    border-radius: 6px;
+    box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.07);
+}
+
+.feature__img:last-child {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 332px;
+    height: 370px;
+}
+
+.feature__content {
+    width: 40.17%;
+    margin-left: auto;
+}
+
+.feature__cta {
+    margin-top: 38px;
 }
